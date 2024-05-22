@@ -38,18 +38,22 @@ Feel free to contribute to this project by submitting issues or pull requests. T
 
 ## Installation
 
-1. Clone the repository:
+Clone the repository:
 
    ```bash
    git clone https://github.com/Arsjj/BouncingBallz.git
    ```
 
-2. ```bash
+Install dependencies
+
+```bash
 npm install
 # or
 yarn install
 # or
 pnpm install
+```
+
 
 ## Getting Started
 
@@ -60,7 +64,7 @@ npm run dev
 # or
 yarn dev
 # or
-pnpm dev
+pnpm dev```
 
 Open (http://localhost:5173/) to view it in your browser.
 
