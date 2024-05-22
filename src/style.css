@@ -1,19 +1,18 @@
 body {
-    margin: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #282c34;
+  margin: 0;
+  /* overflow: hidden; */
+  box-sizing: border-box;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* height: 100vh; */
 }
 canvas {
-    border: 1px solid #ccc;
-    background: #fff;
+  border: 7px solid #ccc;
 }
 .controls {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
 }

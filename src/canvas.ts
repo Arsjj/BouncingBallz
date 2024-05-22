@@ -2,12 +2,23 @@ export const canvas = document.createElement("canvas");
 document.body.appendChild(canvas);
 export const ctx = canvas.getContext("2d");
 
+
+
+
 if (!ctx) {
   throw new Error("Failed to get canvas context");
 }
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+
+const img = new Image()
+img.src = "./pngtree-track-area-in-an-athletic-stadium-with-sun-shining-on-it-picture-image_2476690.jpg"
+ctx?.drawImage(img, 10, 10);
+
+img?.addEventListener("load", () => {
+  ctx?.drawImage(img, 10, 10);
+});
 
 class Ball {
   x: number;
@@ -171,3 +182,4 @@ if (ctx) {
   ctx.fillStyle = "#f0f0f0";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
+
