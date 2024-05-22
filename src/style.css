@@ -1,18 +1,63 @@
 body {
   margin: 0;
-  /* overflow: hidden; */
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
   box-sizing: border-box;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* height: 100vh; */
 }
 canvas {
-  border: 7px solid #ccc;
+  border-bottom: 7px solid #ccc;
 }
-.controls {
+
+.settings {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  color: white;
+  right: 0;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.settings-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+svg {
+  fill: #434343;
+}
+
+svg:hover {
+  stroke: ;
+  fill: black;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+}
+
+.controls {
+  position: relative;
+  top: 0;
+  right: -100%;
+  display: grid;
+  gap: 16px;
+  transition: all;
+  transition-duration: 500ms;
+  width: fit-content;
+  border-radius: 8px;
+  padding: 50px;
+  padding-top: 70px;
+  background-color: white;
+  color: black;
+}
+
+.transform {
+  transform: translateX(-100%);
 }
