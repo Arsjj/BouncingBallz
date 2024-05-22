@@ -1,4 +1,5 @@
 import drawPlayground from "./playground";
+import { getRandomColor } from "../utils";
 
 const canvas = document.createElement("canvas");
 document.body.appendChild(canvas);
@@ -32,7 +33,8 @@ dxControl?.addEventListener("input", () => {
   dxValue = parseFloat(dxControl.value);
 });
 
-dyControl?.addEventListener("input", () => {
+dyControl && dyControl.addEventListener("input", () => {
+  console.log(1)
   dyValue = parseFloat(dyControl.value);
 });
 
@@ -187,14 +189,7 @@ export function initializeUserEvents() {
   tick();
 }
 
-function getRandomColor() {
-  const letters = "0123456789ABCDEF";
-  let color = "#";
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
+
 
 function tick() {
   if (!ctx) return;
